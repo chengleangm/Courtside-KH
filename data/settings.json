@@ -1,0 +1,178 @@
+{
+  "openingTime": "07:00",
+  "closingTime": "22:00",
+  "slotMinutes": 60,
+  "allowedDurations": [
+    60,
+    120,
+    180,
+    240
+  ],
+  "pickleballPricePerHour": 12,
+  "tennisPricePerHour": 15,
+  "currency": "USD",
+  "courts": [
+    {
+      "id": "pb-1",
+      "name": "Pickleball Court 1",
+      "service": "pickleball",
+      "active": true,
+      "environment": "indoor",
+      "surface": "Synthetic",
+      "lighting": true,
+      "pricePerHour": 12,
+      "openingTime": "07:00",
+      "closingTime": "22:00",
+      "capacity": 4,
+      "image": "https://images.unsplash.com/photo-1753901821774-22a88913130f?auto=format&fit=crop&fm=jpg&q=80&w=1200",
+      "description": "Modern court for friendly games, training and group play.",
+      "gallery": [
+        "https://images.unsplash.com/photo-1753901821774-22a88913130f?auto=format&fit=crop&fm=jpg&q=80&w=1400",
+        "https://images.unsplash.com/photo-1762423570127-c36ff11b883f?auto=format&fit=crop&fm=jpg&q=80&w=1400"
+      ],
+      "amenities": [
+        "Changing area",
+        "Drinking water",
+        "Equipment rental",
+        "Reception check-in"
+      ],
+      "rules": [
+        "Arrive 10 minutes before the booking",
+        "Use suitable non-marking sports shoes",
+        "Keep food and glass outside the court"
+      ],
+      "locationLabel": "Courtside KH, Phnom Penh",
+      "featured": true
+    },
+    {
+      "id": "pb-2",
+      "name": "Pickleball Court 2",
+      "service": "pickleball",
+      "active": true,
+      "environment": "outdoor",
+      "surface": "Acrylic",
+      "lighting": true,
+      "pricePerHour": 12,
+      "openingTime": "07:00",
+      "closingTime": "22:00",
+      "capacity": 4,
+      "image": "https://images.unsplash.com/photo-1762423570127-c36ff11b883f?auto=format&fit=crop&fm=jpg&q=80&w=1400",
+      "description": "Modern court for friendly games, training and group play.",
+      "gallery": [
+        "https://images.unsplash.com/photo-1753901821774-22a88913130f?auto=format&fit=crop&fm=jpg&q=80&w=1400",
+        "https://images.unsplash.com/photo-1762423570127-c36ff11b883f?auto=format&fit=crop&fm=jpg&q=80&w=1400"
+      ],
+      "amenities": [
+        "Changing area",
+        "Drinking water",
+        "Equipment rental",
+        "Reception check-in"
+      ],
+      "rules": [
+        "Arrive 10 minutes before the booking",
+        "Use suitable non-marking sports shoes",
+        "Keep food and glass outside the court"
+      ],
+      "locationLabel": "Courtside KH, Phnom Penh",
+      "featured": false
+    },
+    {
+      "id": "pb-3",
+      "name": "Pickleball Court 3",
+      "service": "pickleball",
+      "active": true,
+      "environment": "indoor",
+      "surface": "Synthetic",
+      "lighting": false,
+      "pricePerHour": 12,
+      "openingTime": "07:00",
+      "closingTime": "22:00",
+      "capacity": 4,
+      "image": "https://images.unsplash.com/photo-1753901821774-22a88913130f?auto=format&fit=crop&fm=jpg&q=80&w=1200",
+      "description": "Modern court for friendly games, training and group play.",
+      "gallery": [
+        "https://images.unsplash.com/photo-1753901821774-22a88913130f?auto=format&fit=crop&fm=jpg&q=80&w=1400",
+        "https://images.unsplash.com/photo-1762423570127-c36ff11b883f?auto=format&fit=crop&fm=jpg&q=80&w=1400"
+      ],
+      "amenities": [
+        "Changing area",
+        "Drinking water",
+        "Equipment rental",
+        "Reception check-in"
+      ],
+      "rules": [
+        "Arrive 10 minutes before the booking",
+        "Use suitable non-marking sports shoes",
+        "Keep food and glass outside the court"
+      ],
+      "locationLabel": "Courtside KH, Phnom Penh",
+      "featured": false
+    },
+    {
+      "id": "tn-1",
+      "name": "Tennis Court 1",
+      "service": "tennis",
+      "active": true,
+      "environment": "outdoor",
+      "surface": "Clay",
+      "lighting": true,
+      "pricePerHour": 15,
+      "openingTime": "07:00",
+      "closingTime": "22:00",
+      "capacity": 2,
+      "image": "https://images.pexels.com/photos/1784798/pexels-photo-1784798.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "description": "Well-maintained tennis court with clear lines and evening lighting.",
+      "gallery": [
+        "https://images.pexels.com/photos/1784798/pexels-photo-1784798.jpeg?auto=compress&cs=tinysrgb&w=1400",
+        "https://images.pexels.com/photos/1432039/pexels-photo-1432039.jpeg?auto=compress&cs=tinysrgb&w=1400",
+        "https://images.pexels.com/photos/5741295/pexels-photo-5741295.jpeg?auto=compress&cs=tinysrgb&w=1400"
+      ],
+      "amenities": [
+        "Changing area",
+        "Drinking water",
+        "Equipment rental",
+        "Reception check-in"
+      ],
+      "rules": [
+        "Arrive 10 minutes before the booking",
+        "Use suitable non-marking sports shoes",
+        "Keep food and glass outside the court"
+      ],
+      "locationLabel": "Courtside KH, Phnom Penh",
+      "featured": true
+    },
+    {
+      "id": "tn-2",
+      "name": "Tennis Court 2",
+      "service": "tennis",
+      "active": true,
+      "environment": "outdoor",
+      "surface": "Hard",
+      "lighting": true,
+      "pricePerHour": 15,
+      "openingTime": "07:00",
+      "closingTime": "22:00",
+      "capacity": 2,
+      "image": "https://images.pexels.com/photos/1784798/pexels-photo-1784798.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "description": "Well-maintained tennis court with clear lines and evening lighting.",
+      "gallery": [
+        "https://images.pexels.com/photos/1784798/pexels-photo-1784798.jpeg?auto=compress&cs=tinysrgb&w=1400",
+        "https://images.pexels.com/photos/1432039/pexels-photo-1432039.jpeg?auto=compress&cs=tinysrgb&w=1400",
+        "https://images.pexels.com/photos/5741295/pexels-photo-5741295.jpeg?auto=compress&cs=tinysrgb&w=1400"
+      ],
+      "amenities": [
+        "Changing area",
+        "Drinking water",
+        "Equipment rental",
+        "Reception check-in"
+      ],
+      "rules": [
+        "Arrive 10 minutes before the booking",
+        "Use suitable non-marking sports shoes",
+        "Keep food and glass outside the court"
+      ],
+      "locationLabel": "Courtside KH, Phnom Penh",
+      "featured": false
+    }
+  ]
+}

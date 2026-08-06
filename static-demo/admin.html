@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Courtside KH Admin</title><link rel="stylesheet" href="assets/style.css">
+  <script defer src="assets/shared.js"></script><script defer src="assets/admin.js"></script>
+</head>
+<body>
+<main id="admin-login" class="admin-login">
+  <div class="login-card"><a href="index.html" class="brand"><span class="brand-mark">C</span><span><strong>COURTSIDE</strong><small>KH · TEAM</small></span></a><span class="eyebrow">Private dashboard demo</span><h1>Team sign in</h1><p>Manage bookings, confirmations, schedules and court settings.</p><form id="login-form"><label>Password<input name="password" type="password" required autofocus></label><p id="login-error" class="form-error"></p><button class="button button-full">Sign in</button></form><small>Demo password: admin123</small></div>
+</main>
+<div id="admin-dashboard" class="admin-shell" hidden>
+  <aside class="admin-sidebar">
+    <div class="brand admin-brand"><span class="brand-mark">C</span><span><strong>COURTSIDE</strong><small>KH · ADMIN</small></span></div>
+    <nav>
+      <button class="active" data-tab="bookings" data-en="Booking list" data-km="បញ្ជីការកក់">☷ Booking list</button>
+      <button data-tab="calendar" data-en="Booking calendar" data-km="ប្រតិទិនការកក់">▦ Booking calendar</button>
+      <button data-tab="enquiries">Class enquiries <span id="enquiry-count">0</span></button>
+      <button data-tab="settings">Court settings</button><a href="index.html" target="_blank">Open website ↗</a>
+    </nav>
+    <button type="button" class="admin-language-button" data-lang-toggle></button>
+    <button id="logout" class="logout">Sign out</button>
+  </aside>
+  <main class="admin-content">
+    <div class="admin-top"><div><span class="eyebrow">Operations</span><h1 id="admin-title">Booking dashboard</h1></div><span class="admin-date">Courtside KH · Option 1</span></div>
+    <div id="stats" class="stat-grid"><div><span>Total bookings</span><strong id="stat-total">0</strong></div><div><span>Today</span><strong id="stat-today">0</strong></div><div><span>Pending review</span><strong id="stat-pending">0</strong></div><div><span>Booked value</span><strong id="stat-value">$0.00</strong></div></div>
+
+    <section class="tab-panel" data-panel="bookings">
+      <section class="admin-panel"><div class="admin-tools"><input id="search" placeholder="Search customer or reference"><select id="status-filter"><option value="all">All statuses</option><option value="pending">Pending</option><option value="confirmed">Confirmed</option><option value="completed">Completed</option><option value="cancelled">Cancelled</option></select></div><div class="table-wrap"><table><thead><tr><th>Reference / customer</th><th>Booking</th><th>Date & time</th><th>Amount</th><th>Status</th><th>Actions</th></tr></thead><tbody id="booking-rows"></tbody></table></div></section>
+    </section>
+
+    <section class="tab-panel" data-panel="calendar" hidden>
+      <div class="admin-calendar-layout">
+        <section class="admin-panel admin-calendar-panel"><div class="admin-calendar-toolbar"><button id="admin-cal-prev" type="button">←</button><strong id="admin-cal-title"></strong><button id="admin-cal-next" type="button">→</button></div><div class="admin-calendar-weekdays"><span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span></div><div id="admin-calendar-grid" class="admin-calendar-grid"></div></section>
+        <section class="admin-panel selected-day-panel"><div class="selected-day-heading"><div><span class="eyebrow">Bookings for selected day</span><h2 id="selected-day-title"></h2></div><span id="selected-day-count" class="calendar-booking-count">0</span></div><div id="selected-day-bookings" class="day-booking-list"></div></section>
+      </div>
+    </section>
+
+    <section class="tab-panel" data-panel="enquiries" hidden><section id="enquiry-list" class="admin-panel enquiry-list"></section></section>
+    <section class="tab-panel" data-panel="settings" hidden><form id="settings-form" class="settings-form"><section class="admin-panel"><h2>Operating hours & pricing</h2><div class="form-grid two"><label>Opening time<input id="opening" type="time"></label><label>Closing time<input id="closing" type="time"></label><label>Pickleball price / hour<input id="pickle-price" type="number" step="0.5"></label><label>Tennis price / hour<input id="tennis-price" type="number" step="0.5"></label></div></section><section class="admin-panel"><h2>Courts</h2><div id="court-settings" class="court-settings"></div></section><div class="settings-actions"><span id="settings-message"></span><button class="button">Save settings</button></div></form></section>
+  </main>
+</div>
+
+<div id="edit-modal" class="admin-modal-backdrop" hidden>
+  <div class="admin-modal" role="dialog" aria-modal="true"><div class="admin-modal-header"><div><span class="eyebrow" id="edit-reference"></span><h2>Edit booking</h2></div><button id="edit-close" class="icon-only-button" type="button">✕</button></div><form id="edit-form"><div class="form-grid two"><label>Full name<input name="customerName" required></label><label>Phone number<input name="phone" required></label><label>Email address<input name="email" type="email" required></label><label>Court<select name="courtId" id="edit-court"></select></label><label>Date<input name="date" type="date" required></label><label>Start time<input name="startTime" type="time" required></label><label>Duration<select name="durationMinutes" id="edit-duration"></select></label><label>Status<select name="status"><option value="pending">Pending</option><option value="confirmed">Confirmed</option><option value="completed">Completed</option><option value="cancelled">Cancelled</option></select></label><label class="form-span-two">Notes<textarea name="notes" rows="3"></textarea></label></div><p id="edit-error" class="form-error"></p><div class="admin-modal-actions"><button id="edit-cancel" type="button" class="button button-secondary">Cancel</button><button class="button">Save changes</button></div></form></div>
+</div>
+</body></html>

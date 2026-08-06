@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Book a Court | Courtside KH</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script defer src="assets/shared.js"></script>
+  <script defer src="assets/site.js"></script>
+  <script defer src="assets/book.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">C</span>
+        <span><strong>COURTSIDE</strong><small>KH</small></span>
+      </a>
+      <button class="menu-button" data-menu>☰</button>
+      <nav class="main-nav" data-nav>
+        <a href="index.html#facilities">Facilities</a>
+        <a href="classes.html">Classes &amp; Coaching</a>
+        <a href="book.html" class="button button-small">Book a court</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero compact">
+      <div class="container">
+        <span class="eyebrow">Live availability</span>
+        <h1>Book a court</h1>
+        <p>Choose a sport, select a date from the calendar, then pick an available court and time.</p>
+      </div>
+    </section>
+
+    <section class="section booking-section">
+      <div class="container">
+        <form class="booking-layout" id="booking-form">
+          <div class="booking-main">
+            <section class="form-card">
+              <span class="step-label">Step 1</span>
+              <h2>Choose your game</h2>
+              <div class="service-toggle">
+                <button type="button" class="active" data-service="pickleball">Pickleball</button>
+                <button type="button" data-service="tennis">Tennis</button>
+              </div>
+            </section>
+
+            <section class="form-card">
+              <span class="step-label">Step 2</span>
+              <div class="calendar-heading">
+                <div>
+                  <h2>Select a date</h2>
+                  <p>Choose an available day from the monthly calendar.</p>
+                </div>
+                <button type="button" class="calendar-today" id="calendar-today">Today</button>
+              </div>
+
+              <div class="booking-calendar" aria-label="Booking date calendar">
+                <div class="calendar-toolbar">
+                  <button type="button" class="calendar-nav" id="calendar-previous" aria-label="Previous month">←</button>
+                  <strong id="calendar-month">Month</strong>
+                  <button type="button" class="calendar-nav" id="calendar-next" aria-label="Next month">→</button>
+                </div>
+                <div class="calendar-weekdays" aria-hidden="true">
+                  <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+                </div>
+                <div class="calendar-grid" id="calendar-grid"></div>
+              </div>
+
+              <div class="date-selection-bar">
+                <div>
+                  <span>Selected date</span>
+                  <strong id="selected-date-label">—</strong>
+                </div>
+              </div>
+            </section>
+
+            <section class="form-card">
+              <span class="step-label">Step 3</span>
+              <h2>Select a court and time</h2>
+              <p class="section-helper" id="availability-date"></p>
+              <div id="slots"></div>
+            </section>
+
+            <section class="form-card">
+              <span class="step-label">Step 4</span>
+              <h2>Your details</h2>
+              <div class="form-grid two">
+                <label>Full name<input name="customerName" placeholder="Your name" required></label>
+                <label>Phone number<input name="phone" type="tel" placeholder="+855..." required></label>
+                <label>Email address<input name="email" type="email" placeholder="you@example.com" required></label>
+                <label>Special notes<input name="notes" placeholder="Optional"></label>
+              </div>
+            </section>
+          </div>
+
+          <aside class="booking-summary">
+            <span class="eyebrow">Booking summary</span>
+            <h2><span id="sum-service">Pickleball</span> court</h2>
+            <dl>
+              <div><dt>Date</dt><dd id="sum-date">—</dd></div>
+              <div><dt>Court</dt><dd id="sum-court">Select a court</dd></div>
+              <div><dt>Time</dt><dd id="sum-time">Select a time</dd></div>
+              <div><dt>Blocks</dt><dd id="sum-blocks">—</dd></div>
+              <div><dt>Duration</dt><dd id="sum-duration">—</dd></div>
+              <div class="summary-total"><dt>Total</dt><dd id="sum-total">$0.00</dd></div>
+            </dl>
+            <p class="payment-note">No online payment. Pay at the venue or follow the team’s instructions.</p>
+            <p id="booking-error" class="form-error"></p>
+            <button id="booking-submit" class="button button-full" disabled>Confirm booking</button>
+          </aside>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">© <span data-year></span> Courtside KH.</div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Booking Confirmation | Courtside KH</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script defer src="assets/shared.js"></script>
+  <script defer src="assets/site.js"></script>
+  <script defer src="assets/confirmation.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">C</span>
+        <span><strong>COURTSIDE</strong><small>KH</small></span>
+      </a>
+      <button type="button" class="language-toggle" data-lang-toggle aria-label="Switch language">🌐 <span>ខ្មែរ</span></button>
+    </div>
+  </header>
+  <main class="confirmation-page">
+    <div class="narrow">
+      <div class="confirmation-card" id="confirmation">
+        <span class="success-icon">✓</span>
+        <span class="eyebrow" data-en="Booking received" data-km="បានទទួលការកក់">Booking received</span>
+        <h1 data-en="See you on court." data-km="ជួបគ្នានៅទីលាន។">See you on court.</h1>
+        <p data-en="Your booking has been submitted. Keep the reference below and wait for the Courtside KH team’s confirmation." data-km="ការកក់របស់អ្នកត្រូវបានផ្ញើ។ សូមរក្សាលេខយោងខាងក្រោម ហើយរង់ចាំការបញ្ជាក់ពីក្រុម Courtside KH។">Your booking has been submitted. Keep the reference below and wait for the Courtside KH team’s confirmation.</p>
+
+        <div class="reference-box">
+          <span data-en="Booking reference" data-km="លេខយោងការកក់">Booking reference</span>
+          <strong id="reference"></strong>
+        </div>
+
+        <dl class="confirmation-details">
+          <div><dt data-en="Customer" data-km="អតិថិជន">Customer</dt><dd id="detail-customer"></dd></div>
+          <div><dt data-en="Sport" data-km="កីឡា">Sport</dt><dd id="detail-sport"></dd></div>
+          <div><dt data-en="Court" data-km="ទីលាន">Court</dt><dd id="detail-court"></dd></div>
+          <div><dt data-en="Date" data-km="ថ្ងៃ">Date</dt><dd id="detail-date"></dd></div>
+          <div><dt data-en="Time" data-km="ម៉ោង">Time</dt><dd id="detail-time"></dd></div>
+          <div><dt data-en="Selected blocks" data-km="ប្លុកបានជ្រើស">Selected blocks</dt><dd id="detail-blocks"></dd></div>
+          <div><dt data-en="Duration" data-km="រយៈពេល">Duration</dt><dd id="detail-duration"></dd></div>
+          <div><dt data-en="Amount due at venue" data-km="តម្លៃត្រូវបង់នៅទីតាំង">Amount due at venue</dt><dd id="detail-price"></dd></div>
+          <div><dt data-en="Status" data-km="ស្ថានភាព">Status</dt><dd><span id="detail-status"></span></dd></div>
+        </dl>
+
+        <div class="checkin-instruction">
+          <strong data-en="When you arrive" data-km="ពេលមកដល់ទីតាំង">When you arrive</strong>
+          <p data-en="Show this reference at reception to check in. The team will record your venue payment through the POS before you enter the court." data-km="សូមបង្ហាញលេខយោងនេះនៅ Reception ដើម្បី Check-in។ ក្រុមការងារនឹងកត់ត្រាការបង់ប្រាក់តាម POS មុនពេលអ្នកចូលទីលាន។">Show this reference at reception to check in. The team will record your venue payment through the POS before you enter the court.</p>
+        </div>
+
+        <section class="ticket-export-panel">
+          <div>
+            <span class="eyebrow" data-en="Digital ticket" data-km="សំបុត្រឌីជីថល">Digital ticket</span>
+            <strong data-en="Save your ticket as an image" data-km="រក្សាទុកសំបុត្រជារូបភាព">Save your ticket as an image</strong>
+            <p data-en="Keep it on your phone and show it at reception when you check in." data-km="រក្សាទុកក្នុងទូរស័ព្ទ ហើយបង្ហាញនៅ Reception ពេល Check-in។">Keep it on your phone and show it at reception when you check in.</p>
+          </div>
+          <button type="button" class="button button-dark ticket-download-button" id="save-ticket">
+            <span aria-hidden="true">↓</span>
+            <span data-en="Save ticket image" data-km="រក្សាទុករូបភាព">Save ticket image</span>
+          </button>
+        </section>
+        <p class="ticket-export-status" id="ticket-export-status" role="status" aria-live="polite"></p>
+
+        <p class="payment-note" data-en="No online payment has been collected." data-km="មិនទាន់មានការបង់ប្រាក់អនឡាញទេ។">No online payment has been collected.</p>
+        <div class="confirmation-actions">
+          <a href="index.html" class="button button-secondary" data-en="Back home" data-km="ត្រឡប់ទៅទំព័រដើម">Back home</a>
+          <a href="book.html" class="button" data-en="Book another court" data-km="កក់ទីលានផ្សេងទៀត">Book another court</a>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

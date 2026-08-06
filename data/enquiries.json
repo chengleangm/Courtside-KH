@@ -1,0 +1,48 @@
+[
+  {
+    "id": "enq-demo-001",
+    "service": "coaching",
+    "preferredDate": "2026-08-10",
+    "preferredTime": "17:00",
+    "people": 2,
+    "customerName": "Sreyneang Chum",
+    "phone": "+855 12 890 345",
+    "email": "sreyneang@example.com",
+    "notes": "Beginner private tennis coaching after work.",
+    "status": "new",
+    "createdAt": "2026-08-06T08:30:00.000Z",
+    "updatedAt": "2026-08-06T08:30:00.000Z"
+  },
+  {
+    "id": "enq-demo-002",
+    "service": "class",
+    "preferredDate": "2026-08-15",
+    "preferredTime": "09:00",
+    "people": 6,
+    "customerName": "Kosal Group",
+    "phone": "+855 96 440 221",
+    "email": "kosal.group@example.com",
+    "notes": "Looking for a weekend pickleball introduction class.",
+    "status": "contacted",
+    "assignedCoach": "Coach Dara",
+    "staffNote": "Sent group pricing by Telegram.",
+    "createdAt": "2026-08-05T05:20:00.000Z",
+    "updatedAt": "2026-08-06T02:00:00.000Z"
+  },
+  {
+    "id": "enq-demo-003",
+    "service": "coaching",
+    "preferredDate": "2026-08-12",
+    "preferredTime": "07:30",
+    "people": 1,
+    "customerName": "Mony Roth",
+    "phone": "+855 77 311 820",
+    "email": "mony@example.com",
+    "notes": "Intermediate tennis technique session.",
+    "status": "scheduled",
+    "assignedCoach": "Coach Lina",
+    "staffNote": "Tentatively confirmed for 07:30.",
+    "createdAt": "2026-08-04T04:00:00.000Z",
+    "updatedAt": "2026-08-06T04:00:00.000Z"
+  }
+]

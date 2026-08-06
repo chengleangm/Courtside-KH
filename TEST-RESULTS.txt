@@ -1,0 +1,12 @@
+Courtside KH V4 validation
+
+PASS - TypeScript: node node_modules/typescript/bin/tsc --noEmit
+PASS - ESLint: 0 errors (11 existing no-img-element performance warnings)
+PASS - JSON syntax: data/*.json
+PASS - Booking page no longer calls useSearchParams inside BookingForm
+PASS - Booking API responses are parsed safely without direct response.json()
+PASS - Vercel runtime uses bundled seed data and in-memory write fallback
+PASS - Confirmation can recover a new booking from browser sessionStorage
+
+Production build note:
+The build could not complete in this isolated workspace because the internal package mirror returned 404 for @next/swc-linux-x64-gnu 16.3.0. The project previously compiled on Windows/Vercel; run npm install and npm run build on your computer or let Vercel rebuild after pushing.

@@ -1,0 +1,14 @@
+COURTSIDE KH COMPLETE BOOKING & POS SYSTEM V2
+
+Start here: START-HERE.html
+Feature list: FULL-SYSTEM-FEATURES.md
+Changes: SYSTEM-V2-CHANGES.md
+Validation: TEST-RESULTS.txt
+Admin demo password: admin123
+
+Run:
+  npm install
+  npm run dev
+
+Customer: http://localhost:3000
+Admin:    http://localhost:3000/admin/login

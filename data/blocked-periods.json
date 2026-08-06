@@ -1,0 +1,29 @@
+[
+  {
+    "id": "block-demo-001",
+    "courtId": "pb-2",
+    "date": "2026-08-07",
+    "startTime": "12:00",
+    "endTime": "14:00",
+    "reason": "Maintenance",
+    "createdAt": "2026-08-06T08:00:00.000Z"
+  },
+  {
+    "id": "block-demo-002",
+    "courtId": "tn-2",
+    "date": "2026-08-08",
+    "startTime": "09:00",
+    "endTime": "12:00",
+    "reason": "Tennis Camp",
+    "createdAt": "2026-08-06T08:30:00.000Z"
+  },
+  {
+    "id": "block-demo-003",
+    "courtId": "pb-3",
+    "date": "2026-08-10",
+    "startTime": "10:00",
+    "endTime": "13:00",
+    "reason": "Private Event",
+    "createdAt": "2026-08-06T09:00:00.000Z"
+  }
+]
